@@ -3,10 +3,19 @@ Public Class MvcApplication
     Inherits System.Web.HttpApplication
 
     Sub Application_Start()
-        AreaRegistration.RegisterAllAreas()
-        GlobalFilters.Filters.Add(New HandleErrorAttribute())
-        RouteTable.Routes.IgnoreRoute("{resource}.axd/{*pathInfo}")
-        RouteTable.Routes.MapRoute(Nothing, "{Controller}/{Action}", New With {.Controller = "Home", .Action = "Index"})
+        RouteTable.Routes.MapRoute(Nothing, "", New ControllerAction("Index"))
+        RouteTable.Routes.MapRoute(Nothing, "Download", New ControllerAction("Download"))
     End Sub
+
+    Private Class ControllerAction
+
+        Public Property Controller As String = "Home"
+        Public Property Action As String
+
+        Public Sub New(Action As String)
+            Me.Action = Action
+        End Sub
+
+    End Class
 
 End Class

@@ -1,5 +1,5 @@
 ﻿
-div.body {
+body {
     font-family: sans-serif;
     background-color: #fff;
     color: #000;
@@ -16,38 +16,42 @@ div.header, div.body, div.footer {
     width: 1000px;
 }
 
-div.header a.logo {
-    display: block;
-    height: 100px;
-    background: transparent url('Logo.png') left top scroll no-repeat;
-    text-decoration: none;
-}
-
-div.header ul {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    background-color: #eee;
-    overflow: hidden;
-}
-
-    div.header ul li {
-        margin: 0px;
-        padding: 0px;
-        float: left;
+    div.header a.logo {
+        display: block;
+        height: 100px;
+        background: transparent url('Logo.png') left top scroll no-repeat;
+        text-decoration: none;
     }
 
-        div.header ul li a {
-            color: #0917d9;
-            font-weight: bold;
-            padding: 10px 30px 10px 30px;
-            display: block;
-            text-decoration: none;
+    div.header ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        background-color: #eee;
+        overflow: hidden;
+    }
+
+        div.header ul li {
+            margin: 0px;
+            padding: 0px;
+            float: left;
         }
 
-        div.header ul li a:hover {
-            background-color: #ddd;
-        }
+            div.header ul li a {
+                color: #0917d9;
+                font-weight: bold;
+                padding: 10px 30px 10px 30px;
+                display: block;
+                text-decoration: none;
+            }
+
+                div.header ul li a:hover {
+                    background-color: #ddd;
+                }
+
+div.body {
+    padding-bottom: 200px;
+}
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,
