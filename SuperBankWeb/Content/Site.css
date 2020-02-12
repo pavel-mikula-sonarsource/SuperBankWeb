@@ -5,7 +5,11 @@ div.body {
     color: #000;
 }
 
-div.header, div.body {
+a {
+    color: #555;
+}
+
+div.header, div.body, div.footer {
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;

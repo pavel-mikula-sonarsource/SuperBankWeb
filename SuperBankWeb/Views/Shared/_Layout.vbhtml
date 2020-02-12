@@ -17,5 +17,13 @@
     <div class="body">
         @RenderBody()
     </div>
+    <div class="footer">
+        <hr />
+        <h3>Important documents</h3>
+        <ul>
+            <li><a href="/Home/Download?File=Terms and conditions.pdf">Terms and conditions</a></li>
+            <li><a href="/Home/Download?File=Security checklist.pdf">Security checklist</a></li>
+        </ul>
+    </div>
 </body>
 </html>
