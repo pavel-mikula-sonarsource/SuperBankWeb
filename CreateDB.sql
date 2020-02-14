@@ -26,6 +26,8 @@ CREATE TABLE Customer(
 	Reputation NVARCHAR(MAX) NOT NULL DEFAULT '',
 	AccountBalance MONEY NOT NULL DEFAULT 0
 )
+
+--DROP TABLE Customer
 INSERT INTO Customer VALUES
   ('Pavel', 'Secret!','He''s bad, do not lend him money!', -100)
 , ('Alet', '123456', 'Verified', 10000)
@@ -60,6 +62,9 @@ INSERT INTO Customer VALUES
 , ('Thibaud', 'cat', 'Verified', 10000)
 , ('Thomas', 'dog', 'Verified', 10000)
 
+SELECT * FROM Customer
+
+--DROP TABLE SecretNote
 CREATE TABLE SecretNote(
 	ID INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
 	Text NVARCHAR(MAX) NOT NULL DEFAULT ''
@@ -73,6 +78,7 @@ INSERT INTO SecretNote VALUES
 
 SELECT * FROM SecretNote
 
+--DROP TABLE Article
 CREATE TABLE Article(
 	ID INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
 	Active BIT NOT NULL DEFAULT 0,
