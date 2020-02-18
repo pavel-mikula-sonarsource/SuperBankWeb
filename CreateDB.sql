@@ -1,4 +1,4 @@
-CREATE DATABASE SuperBank
+--CREATE DATABASE SuperBank
 USE SuperBank
 
 /*
@@ -19,6 +19,7 @@ INSERT INTO Employee VALUES
 
 SELECT * FROM Employee
 
+--DROP TABLE Customer
 CREATE TABLE Customer(
 	ID INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
 	Login NVARCHAR(100) NOT NULL DEFAULT '',
@@ -27,7 +28,6 @@ CREATE TABLE Customer(
 	AccountBalance MONEY NOT NULL DEFAULT 0
 )
 
---DROP TABLE Customer
 INSERT INTO Customer VALUES
   ('Pavel', 'Secret!','He''s bad, do not lend him money!', -100)
 , ('Alet', '123456', 'Verified', 10000)
@@ -63,20 +63,6 @@ INSERT INTO Customer VALUES
 , ('Thomas', 'dog', 'Verified', 10000)
 
 SELECT * FROM Customer
-
---DROP TABLE SecretNote
-CREATE TABLE SecretNote(
-	ID INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
-	Text NVARCHAR(MAX) NOT NULL DEFAULT ''
-)
-
-INSERT INTO SecretNote VALUES
-  ('Employee 1 has affair with Employee 2')
-, ('Employee 3 distribute drugs. At lunch time!')
-, ('Employee 4 works for CIA and KGB')
-, ('Employee 5 is alcoholic')
-
-SELECT * FROM SecretNote
 
 --DROP TABLE Article
 CREATE TABLE Article(
