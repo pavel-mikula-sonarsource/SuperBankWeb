@@ -26,10 +26,11 @@ Public Class HomeController
         End If
     End Function
 
-    Private Function ExecuteReader(Command As String) As SqlDataReader
+    Private Function ExecuteReader(Command As String, ParamArray Params() As SqlParameter) As SqlDataReader
         Dim Conn As New SqlConnection(ConfigurationManager.ConnectionStrings("Default").ConnectionString)
         Using Cmd As New SqlCommand(Command, Conn)
             Conn.Open()
+            Cmd.Parameters.AddRange(Params)
             Return Cmd.ExecuteReader(CommandBehavior.CloseConnection)
         End Using
     End Function
