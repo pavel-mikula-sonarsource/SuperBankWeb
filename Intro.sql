@@ -1,45 +1,29 @@
 
-SELECT * FROM Customer
+--SELECT * FROM Customer
 
 
 
-SELECT ID, Login, Reputation FROM Customer
+--SELECT ID, Login, Reputation FROM Customer
 
 
 
-SELECT * FROM Customer WHERE Login='Pavel'
+--SELECT * FROM Customer WHERE Login='Pavel'
 
 
 
-SELECT Reputation FROM Customer WHERE Login='Pavel'
+--SELECT ID FROM Customer WHERE Login='Pavel' AND Password='Secret!'
 
 
 
-SELECT ID FROM Customer WHERE Login='Pavel' AND Password='xxx'
+----This is comment
 
 
 
-SELECT ID FROM Customer WHERE Login='Pavel' AND Password='Secret!'
+--/*
+--INSERT
+--UPDATE
+--DELETE
 
-
-
---This is comment
-
-
-
-SELECT Hack THIS site %%!
-
-
-
-SELECT 'Hack THIS site %%!'
-
-
-
-/*
-INSERT
-UPDATE
-DELETE
-
-Manage database (CREATE TABLE, DROP TABLE, ...)
-Manage server (SHUTDOWN, add login, ...)
-*/
+--Manage database (CREATE TABLE, DROP TABLE, ...)
+--Manage server (SHUTDOWN, add login, ...)
+--*/
